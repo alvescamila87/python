@@ -1,3 +1,4 @@
-numero1=input('Informe um número')
-numero2=input('Informe outro número')
-print(numero1 + numero2)
+numero1=int(input('Informe um número'))
+numero2=int(input('Informe outro número'))
+soma=numero1+ numero2
+print('A soma dos números é:', soma)
