@@ -1,4 +1,3 @@
-salario1=float(input('informe seu salário atual R$:'))
-aumento=salario1*0.15
-salario2=salario1+aumento
-print('Seu ganhou um aumento de 15% salário de R${} para R${}'.format(salario1))
+c=float(input('informe a temperatura em ºC:'))
+f= 9*c/5+32
+print('A temperatura de {:.1f}ºC corresponde à {:.1f}ºF.'.format(c, f))

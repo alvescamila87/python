@@ -1,5 +1,7 @@
-altura=float(input('informe a altura da parede em metros:'))
-largura=float(input('informe a largura da parede em metros:'))
-area=largura*altura
-print('A quantidade de tinta necessária para pintar a área de {}m² são de {}l de tinta'.format(area, (area/2)))
+diarias=int(input('Quantos dias alugados?'))
+kmRodados=float(input('Quantos km rodados?'))
+carro=60
+km=0.15
+total=(kmRodados*km)+(diarias*carro)
+print('O total a pagar é de R${:.2f}.'.format(total))
 
