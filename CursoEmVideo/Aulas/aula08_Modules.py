@@ -14,3 +14,10 @@ funcionalidades:
 - factorial
 
 from math import sqrt, ceil
+
+import:
+
+math
+random
+pygame
+emoji
