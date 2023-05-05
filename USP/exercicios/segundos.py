@@ -8,6 +8,7 @@ d = segundos_rest % 60
 print('{} dias, {} horas, {} minutos e {} segundos.'.format(a, b, c, d))
 
 #forma de cálculo
+#O operador "//" faz uma divisão inteira jogando fora o resto, ou seja, aquilo que é menor que o divisor. O operador "%" devolve apenas o resto da divisão inteira jogando fora o resultado, ou seja, tudo que é maior ou igual ao divisor.
 #pega o total de segundos e divide por 86400 (a quantidade de segundos em um dia), o resultado (descontando as casas decimais) é o total de dias
 #pega o resto da divisão por 86400, assim tem-se a "sobra" (a quantidade de segundos que não é suficiente para completar um dia)
 #depois divide esse resultado por 3600 (a quantidade de segundos em uma hora), o resultado (descontando as casas decimais) é o total de horas
