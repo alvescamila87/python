@@ -17,13 +17,16 @@ c = int(input('Informa o valor de c:' ))
 
 delta = (b ** 2) - 4 * a * c
 
-if a == 0:
-    print('Essa equação não possui raizes reais {}'.format(delta))
-if delta < 0:
-    print('Essa equação possui raizes reais.')
+if delta == 0:
+    print('A única raiz é: {}'.format(delta))
 else:
-    x1 = (-b + delta ** (1 / 2)) / (2 * a)
-    x2 = (-b - delta ** (1 / 2)) / (2 * a)
-    
-    print('As raízes dessa equação são: 1ª raiz: {} e 2ª raiz: {}'.format(x1, x2))
+    if delta < 0:
+        print('Essa equação NÃO possui raizes reais.')
+    else:
+        #x1 = (-b + delta ** (1 / 2)) / (2 * a)
+        #x2 = (-b - delta ** (1 / 2)) / (2 * a)
+        x1 = (-b + math.sqrt(delta)) / (2 * a)
+        x2 = (-b - math.sqrt(delta)) / (2 * a)
+
+        print('As raízes dessa equação são: 1ª raiz: {} e 2ª raiz: {}'.format(x1, x2))
 
