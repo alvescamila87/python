@@ -11,7 +11,7 @@ import math
 math.sqrt(8)
 print()
 
-a = int(input('Informe o valor de a:'))
+a = int(input('Informe o valor de a: '))
 b = int(input('Informe o valor de b: '))
 c = int(input('Informa o valor de c:' ))
 
