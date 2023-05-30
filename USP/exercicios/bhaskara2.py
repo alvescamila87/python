@@ -6,10 +6,10 @@ def delta(a, b, c):
 
 #função da entrada de dados
 def main():
-    a=float(input('Informe o valor de a: '))
-    b=float(input('Informe o valor de b: '))
-    c=float(input('Informe o valor de c: '))
-    imprime_raizes(a, b, c)
+    a_digitado=float(input('Informe o valor de a: '))
+    b_digitado=float(input('Informe o valor de b: '))
+    c_digitado=float(input('Informe o valor de c: '))
+    imprime_raizes(a_digitado, b_digitado, c_digitado)
 
 #função imprime raízes
 def imprime_raizes(a, b, c):
