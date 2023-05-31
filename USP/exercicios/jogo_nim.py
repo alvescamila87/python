@@ -9,6 +9,7 @@ def main():
     escolha = int(input("O que você escolhe? "))
     while escolha != 1 and escolha != 2:
         print("Número inválido. Informe 1 ou 2 para iniciar o jogo.")
+        escolha = int(input("O que você escolhe? "))
 
     if escolha == 1:
         print("Você escolheu iniciar uma partida isolada! ")
@@ -95,3 +96,18 @@ def partida():
             return 1 #Ponto para o usuário
 
 def campeonato():
+    quantidade_partida = 1
+    placar_computador = placar_usuario = 0
+
+    while quantidade_partida < 4:
+        print("Rodada {}".format(quantidade_partida))
+        if partida() == 1:
+            placar_usuario = placar_computador + 1
+        else:
+            placar_computador = placar_computador + 1
+        quantidade_partida = quantidade_partida + 1
+
+    print("Final do campeonato!")
+    print("Placar: Você {}, Computador {}".format(placar_usuario, placar_computador))
+
+main()
