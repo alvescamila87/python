@@ -3,8 +3,8 @@
 #Escolha de tipo de partida
 def main():
     print("Bem vindo ao jogo do NIM! Escolha: ")
-    print("1 - para jogar uma partida isolada")
-    print("2 - para jogar um campeonato")
+    print("Informe '1' para jogar uma partida isolada")
+    print("Informa '2' para jogar um campeonato")
 
     escolha = int(input("O que você escolhe? "))
     while escolha != 1 and escolha != 2:
@@ -54,13 +54,13 @@ def partida():
             if jogada == 1:
                 valor = usuario_escolhe_jogada(n, m)
                 print("Você tirou {} peças no tabuleiro.".format(valor))
-                n = n  - valor
+                n = n - valor
                 print("Agora restam {} peças no tabuleiro.".format(n))
                 jogada = 2
             else:
                 valor = computador_escolhe_jogada(n, m)
                 print("O computador tirou {} peças no tabuleiro.".format(valor))
-                n = n  - valor
+                n = n - valor
                 print("Agora restam {} peças no tabuleiro.".format(n))
                 jogada = 1
 
@@ -75,7 +75,7 @@ def partida():
         print("Computador começa!")
         jogada = 2 #Vez do computador iniciar a partida
         while n > 0:
-            if jogada == 1:
+            if jogada == 2:
                 valor = computador_escolhe_jogada(n, m)
                 print("O computador tirou {} peças no tabulero.".format(valor))
                 n = n - valor
@@ -92,14 +92,14 @@ def partida():
             print("Fim de jogo! O computador venceu =(")
             return 2 #Ponto para o computador
         else:
-            print("Fimd e jogo! Você venceu!!! =D")
+            print("Fim de jogo! Você venceu!!! =D")
             return 1 #Ponto para o usuário
 
 def campeonato():
     quantidade_partida = 1
     placar_computador = placar_usuario = 0
 
-    while quantidade_partida < 4:
+    while quantidade_partida <= 3:
         print("Rodada {}".format(quantidade_partida))
         if partida() == 1:
             placar_usuario = placar_computador + 1
