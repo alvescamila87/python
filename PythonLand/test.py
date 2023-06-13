@@ -1,4 +1,5 @@
-result = 5 * 3
-print(result)
-4 * result
-print(result)
+door_is_locked = False
+if door_is_locked:
+    print('Mum, open the door, please.')
+else:
+    print("Let's go inside!")
