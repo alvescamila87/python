@@ -24,9 +24,35 @@ def say_hi():
 
 say_hi()
 
-def greet(name, location):
+def greeter(name, location):
     print('Hi', name, 'welcome to', location)
 
-greet('Camila', 'Blumenau')
+greeter('Camila', 'Blumenau')
 
+def add(a, b):
+    return a + b
 
+result = add(4, 8)
+print(result)
+
+def optional_greeter(name):
+    if name.startswith('X'):
+        #We don't greet people with wierd names :P
+        return
+
+    print('Hi there, ', name)
+
+optional_greeter('Xander')
+
+def say_hello():
+    print('Hi', name)
+
+name = 'Camila'
+say_hello()
+
+def welcome(name="Bella", location='Blumenau'):
+    print('Hi,', name, 'welcome to', location)
+
+welcome()
+welcome('Camila')
+welcome(name='Karoline', location='Timbó')
