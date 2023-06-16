@@ -56,3 +56,16 @@ def welcome(name="Bella", location='Blumenau'):
 welcome()
 welcome('Camila')
 welcome(name='Karoline', location='Timbó')
+
+def say_hi(name):
+    if name == '' or len(name) <=1:
+        print("You didn't enter your name!")
+    else:
+        print('Hey, there...')
+
+    for letter in name:
+        print(letter)
+
+while True:
+    name = input('Your name: ')
+    say_hi(name)
