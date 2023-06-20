@@ -69,3 +69,5 @@ def say_hi(name):
 while True:
     name = input('Your name: ')
     say_hi(name)
+
+dri("test")
