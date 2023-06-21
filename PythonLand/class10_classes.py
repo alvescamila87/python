@@ -49,3 +49,13 @@ car.increase_speed(40)
 Vrooom!
 car.stop()
 Halting
+car.shut_down()
+
+
+#Creating multiple objects
+>>> car1 = Car()
+>>> car2 = Car()
+>>> id(car1)
+139771129539104
+>>> id(car2)
+139771129539160
