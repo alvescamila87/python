@@ -33,3 +33,10 @@ my_list_2 = [55,33,88]
 for numbers in my_list:
     print(numbers)
 
+#List to string str() or __str___
+
+#Sorting list: in-place list sort in ascending order: .sort()
+#Sorting list: in-place list sort in descending order: .sort(reverse=True)
+
+#Using sorted() ascending, the original list is unchanged
+#Using sorted(, reverse=True) descending, the original list is unchanged
