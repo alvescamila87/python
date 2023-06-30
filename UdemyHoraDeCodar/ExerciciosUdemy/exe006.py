@@ -13,4 +13,6 @@ print(y and z) #false
 print(not y) #true
 print(x and z) #false
 
+print(5 > 2 and z == False) #true
+
 
