@@ -33,3 +33,21 @@ def return_odd(list_3):
 odd_list = return_odd(list_3)
 print(odd_list)
 
+#funcao que retorna vogais
+
+lista = ["a", "b", "c", "d", "e", "f", "i", "u", "o"]
+
+def retorna_vogais(lista):
+    lista_vogais = []
+
+    for vogal in lista:
+        if vogal in ["a", "e", "i", "o", "u"]:
+            lista_vogais.append(vogal)
+
+    return lista_vogais
+    
+lista_vogais_2 = retorna_vogais(lista)
+print(lista_vogais_2)
+    
+
+    
