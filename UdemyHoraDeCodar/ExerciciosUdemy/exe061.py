@@ -11,7 +11,7 @@ class Carro:
 
     def abastecer(self, litros):
         if self.tanque_gasolina >= 100:
-            print("Taque cheio: %d" %litros)
+            print("Taque cheio: %d lts." %litros)
         else:
             self.tanque_gasolina += litros
             if self.tanque_gasolina > 100:
@@ -33,3 +33,5 @@ print(fusca.tanque_gasolina)
 #dirigir para esvaziar tanque
 fusca.dirigir(80)
 print(fusca.tanque_gasolina)
+
+
