@@ -1,4 +1,4 @@
-#orientação a objeto: metodo
+#orientação objeto: exercicio carro km e abastecimento
 
 class Carro:
     km = 0
@@ -20,6 +20,7 @@ class Carro:
     def dirigir(self, km):
         km_por_litro = 10
         self.tanque_gasolina -= (km / km_por_litro)
+        print("Você rodou %d km e o seu nível de gasolina é de %d litro(s)" %(km, self.tanque_gasolina))
 
 
 fusca = Carro("Fusca", 20000, 2, 10)
