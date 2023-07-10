@@ -1,4 +1,4 @@
-#orientação a objetos: herança: substituicao de método
+#orientação a objetos: substituicao de método
 
 class Pessoa:
     def falar(self):
