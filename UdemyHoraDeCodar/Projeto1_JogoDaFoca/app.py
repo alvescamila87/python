@@ -10,7 +10,7 @@ def selecionar_palavra():
 # Iniciar o jogo
 def jogar(palavra):
     # Definir algumas variáveis
-    palavra_a_completar = " " * len(palavra) # _ _ _ _ _ 
+    palavra_a_completar = " " * len(palavra) # _ _ _ _ _ _
     advinhou = False
     letras_utilizadas = []
     palavras_utilizadas = []
@@ -54,8 +54,6 @@ def jogar(palavra):
                 palavra_lista[indice] = tentativa
 
             palavra_a_completar = "".join(palavra_lista)
-
-            print(palavra_a_completar)
 
             if "_" not in palavra_a_completar:
                 advinhou = True
@@ -151,3 +149,15 @@ def exibir_forca(tentativas):
     ]
      
     return estagios[tentativas]
+
+# Iniciação do jogo e continuar jogando
+def iniciar():
+    palavra = selecionar_palavra()
+    jogar(palavra)
+
+    # Quando acabar o jogo, verifica se o jogador quer continuar jogando
+    while input("Jogar novamente? (S/N)").upper() == "S":
+        palavra = selecionar_palavra()
+        jogar(palavra)
+
+iniciar()
