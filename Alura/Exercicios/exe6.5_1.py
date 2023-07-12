@@ -1,3 +1,4 @@
+#funcao
 def velocidade_media(distancia, tempo):
     velocidade = distancia / tempo
     print(velocidade)
