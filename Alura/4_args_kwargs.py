@@ -25,3 +25,6 @@ minha_funcao(nome='Marlene')
 #nova opção 1
 dicionario = {'nome': 'malene', 'idade': 3}
 minha_funcao(**dicionario)
+
+#forma de acessar o dicionario, pela chave:
+print(dicionario['nome'])
