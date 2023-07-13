@@ -1,4 +1,4 @@
-#programação orientada a objetaos
+#programação orientada a objetos
 
 def criar_conta(numero, titular, saldo, limite):
     conta = {'numero': numero, 'titular': titular, 'saldo': saldo, 'limite': limite}
