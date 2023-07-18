@@ -17,6 +17,11 @@ class Conta:
     def extrato(self):
         print('número: {}, saldo atualizado: {}' .format(self.numero, self.saldo))
 
+    def transfere_para(self, destino, valor):
+        self.saldo -= valor
+        destino.saldo += valor
+               
+
 
 #instanciar objeto 
 conta = Conta('123-4', "Camila", 1000, 5000)
@@ -33,3 +38,10 @@ conta.saca(50)
 print(conta.saldo)
 
 conta.extrato()
+
+#charmar o método transfere para
+
+conta2 = Conta('999-5', "Isabel", 100, 50000)
+
+# conta.transfere_para("999-5", 50)
+# print(conta.saldo)
