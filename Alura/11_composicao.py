@@ -68,3 +68,7 @@ conta1.extrato()
 
 conta1.historico.imprimir()
 conta2.historico.imprimir()
+
+print(dir(Conta))
+
+print(vars(conta1))

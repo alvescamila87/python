@@ -45,7 +45,7 @@ print(conta1.titular)
 print(conta1.titular.nome)
 
 
-#Tipo
+#Devolver o Tipo das variáveis
 print(type(conta1.numero))
 print(type(conta1.saldo))
 print(type(conta1.limite))
