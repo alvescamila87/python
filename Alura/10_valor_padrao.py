@@ -1,9 +1,15 @@
-#programação orientada a objetos: método transfere
+#programação orientada a objetos: atributos de classe ou argumentos de função podem receber valor padrão
+
+class Cliente:
+    def __init__(self, nome, sobrenome, cpf):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.cpf= cpf
 
 class Conta:
-    def __init__(self, numero, titular, saldo, limite):
+    def __init__(self, numero, cliente, saldo, limite=7000):
         self.numero = numero
-        self.titular = titular
+        self.titular = cliente
         self.saldo = saldo
         self.limite = limite
 
@@ -24,18 +30,22 @@ class Conta:
         print("Extrato da conta: {} e Titular: {}. Saldo atualizado: R${}, Limite: {}" .format(self.numero, self.titular, self.saldo, self.limite))
 
 
-conta1 = Conta("123-4", "Camila", 10000, 50000)
-conta1.extrato()
-    
-conta1.depositar(500)
+#Instanciar objeto de cliente
+cliente1 = Cliente("Camila", "Cabral", "1111111111-1")
+print(cliente1.nome, cliente1.cpf)
+
+#Instanciar objeto conta e passar o cliente como titular da conta
+conta1 = Conta("12345-6", cliente1, 5000)
 conta1.extrato()
 
-conta1.sacar(200)
-conta1.extrato()
+#Acessar a referência 'Cliente' da conta 
+print(conta1.titular)
 
-conta2 = Conta("999-5", "Isabel", 30000, 75000)
-conta2.extrato()
+#Acessar o atributo do objeto referência 'Cliente'
+print(conta1.titular.nome)
 
-conta1.transferir_para(conta2, 3333)
-conta1.extrato()
-conta2.extrato()
+
+#Tipo
+print(type(conta1.numero))
+print(type(conta1.saldo))
+print(type(conta1.limite))
