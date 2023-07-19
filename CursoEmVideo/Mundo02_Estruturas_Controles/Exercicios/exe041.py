@@ -1,16 +1,32 @@
-#Média de nota da matéria
+#classificação de atletas
 
-nota1 = float(input("Primeira nota: "))
-nota2 = float(input("Segunda nota: "))
+from datetime import date
+atual = date.today().year
 
-media = (nota1 + nota2) / 2
+ano_nascimento = int(input("Ano nascimento do atleta: "))
 
-if media < 5:
-    print("Tirando {} e {} a média do aluno é {}.".format(nota1, nota2, media))
-    print("REPROVADO!")
-elif media <= 6.9 and media >= 5:
-    print("Tirando {} e {} a média do aluno é {}.".format(nota1, nota2, media))
-    print("RECUPERAÇÃO!")
-elif media > 7:
-    print("Tirando {} e {} a média do aluno é {}.".format(nota1, nota2, media))
-    print("APROVADO!")
+idade = atual - ano_nascimento
+
+# if idade > 25:
+#     print("Classificação do atleta: MASTER")
+# elif idade <= 25 and idade > 19: 
+#     print("Classificação do atleta: SÊNIOR")
+# elif idade <= 19 and idade > 14: 
+#     print("Classificação do atleta: JUNIOR")
+# elif idade <= 14 and idade > 9: 
+#     print("Classificação do atleta: INFANTIL")
+# elif idade <= 9:
+#     print("Classificação do atleta: MIRIM")
+
+#OUTRA FORMA DE RESOLVER
+
+if idade <= 9:
+    print("Classificação do atleta: MIRIM")
+elif idade <= 14: 
+    print("Classificação do atleta: INFANTIL")
+elif idade <= 19: 
+    print("Classificação do atleta: JUNIOR")
+elif idade <= 25: 
+    print("Classificação do atleta: SÊNIOR")
+else:
+    print("Classificação do atleta: MASTER")
