@@ -1,5 +1,7 @@
 #gerenciador de pagamentos
 
+print('{:=^40}'.format(' LOJAS ALVES '))
+
 compras = float(input("Preço total das compras: R$"))
 
 formas_pagamento = int(input('''
@@ -43,7 +45,7 @@ print('''
 [ 2 ] à vista cartão de crédito
 [ 3 ] 2x no cartão de crédito                           
 [ 4 ] 3x ou mais no cartão de crédito                             
-Escolha uma das opções: ''')
+''')
 
 opcao = int(input("Escolha uma das opções: "))
 
