@@ -15,5 +15,5 @@ for pessoa in range(1,6):
             menor_peso = peso
             
 
-print("O maior peso lido foi de {:.2f}kg.".format(maior_peso))
-print("O maior peso lido foi de {:.2f}kg.".format(menor_peso))
+print("O maior peso lido foi de {:.1f}kg.".format(maior_peso))
+print("O maior peso lido foi de {:.1f}kg.".format(menor_peso))
