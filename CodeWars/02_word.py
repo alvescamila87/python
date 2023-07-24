@@ -5,8 +5,8 @@ print(frase)
 palavras = frase.split()
 print(palavras)
 
-junto = "".join(palavras)
-print(junto)
+# junto = "".join(palavras)
+# print(junto)
 
-# for letra in range(len(junto) -1, -1, -1):
-#      print(junto[letra])
+for letra in range(len(palavras) -1, -1, -1):
+     print(palavras[letra])
