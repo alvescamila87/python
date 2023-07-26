@@ -28,4 +28,12 @@ while True:
     s += n
 
 # print("A soma dos números informados vale {}.".format(s))
-print(f"A soma dos números informados vale {s}.")
+print(f"A soma dos números informados vale {s}.") #f-string
+
+#f-strings
+nome = "Camila"
+idade = 35
+salario = 987.35
+print(f"A {nome} tem {idade} anos e ganha R${salario:.2f}") #python 3.6+
+print("A {} tem {} anos.".format(nome, idade)) #python 3+
+print("A %s tem %d anos." %(nome, idade)) #python 2+
