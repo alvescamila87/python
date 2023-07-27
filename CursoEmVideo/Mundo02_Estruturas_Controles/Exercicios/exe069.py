@@ -1,13 +1,14 @@
 #estrutura de repetição: análise de dados do grupo
 
+print("-"*30)
+print("CADASTRE UMA PESSOA")    
+print("-"*30)
+
 contador = 0
 total_homens = 0
 total_mulheres = 0
 
 while True: 
-    print("-"*30)
-    print("CADASTRE UMA PESSOA")    
-    print("-"*30)
     idade = int(input("Idade: "))
     sexo = ' '
     while sexo not in "FM":
