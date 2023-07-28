@@ -28,4 +28,4 @@ while True:
 print('{:-^40}'.format(' FIM DO PROGRAMA '))
 print(f"O total da compra foi de R${soma:.2f}.")
 print(f"Temos {contador} produtos custando mais de R$1.000,00.'")
-print(f"O produto mais barato foi '{nome_produto_barato}' que custa R${menor_valor}.")
+print(f"O produto mais barato foi '{nome_produto_barato}' que custa R${menor_valor:.2f}.")
