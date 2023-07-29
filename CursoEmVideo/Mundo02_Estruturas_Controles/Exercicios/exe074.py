@@ -28,7 +28,7 @@ for x in numeros:
     if x > maior_valor:
         maior_valor = x
         print(f"MAIOR valor: '{maior_valor}'")
-    if x < menor_valor:
+    elif x < menor_valor:
         menor_valor = x
         print(f"MENOR valor: '{menor_valor}'")
 
