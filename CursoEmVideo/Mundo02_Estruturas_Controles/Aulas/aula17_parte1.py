@@ -1,4 +1,4 @@
-# Estruturas compostas: variáveis compostas: Foco em LISTAS[]
+# Estruturas compostas: variáveis compostas: Foco em LISTAS[] - Parte 1
 # Listas são mutáveis
 
 lanche = ["hambúrguer", "suco", "pizza", "pudim"]
@@ -60,7 +60,6 @@ nome = []
 nome = list()
 
 # Criando lista
-
 lista_numeros = []
 lista_numeros.append(14)
 lista_numeros.append(13)
@@ -92,7 +91,7 @@ print(f"Lista B: {b}")
 
 # Criar uam CÓPIA da lista 
 c = [9,6,5,4]
-d = c[:]
-d[2] = 8
+d = c[:] # CÓPIA
+d[2] = 8 # Alterará SOMENTE a lista D, pois NÃO estão  INTERLIGADAS / IGUALADAS
 print(f"Lista C: {c}")
 print(f"Lista D: {d}")

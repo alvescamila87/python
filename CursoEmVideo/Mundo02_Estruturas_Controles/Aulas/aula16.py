@@ -1,6 +1,7 @@
-#Estruturas compostas: variáveis compostas (), [], {}
+# Estruturas compostas: variáveis compostas (), [], {}
 # tuplas(), listas[] e dicionários{}
-# o python novo permite criar tupla sem parênteses
+# Foco em TUPLAS(), o python novo permite criar tupla sem parênteses
+# Tuplas são ÍMUTÁVEIS
 
 # Tuplas são imutáveis
 lanche = ("Hambúrguer", "Suco", "Pizza", "Pudim")

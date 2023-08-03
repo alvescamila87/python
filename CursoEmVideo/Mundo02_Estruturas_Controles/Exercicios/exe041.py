@@ -7,16 +7,16 @@ ano_nascimento = int(input("Ano nascimento do atleta: "))
 
 idade = atual - ano_nascimento
 
-# if idade > 25:
-#     print("Classificação do atleta: MASTER")
-# elif idade <= 25 and idade > 19: 
-#     print("Classificação do atleta: SÊNIOR")
-# elif idade <= 19 and idade > 14: 
-#     print("Classificação do atleta: JUNIOR")
-# elif idade <= 14 and idade > 9: 
-#     print("Classificação do atleta: INFANTIL")
-# elif idade <= 9:
-#     print("Classificação do atleta: MIRIM")
+if idade > 25:
+    print("Classificação do atleta: MASTER")
+elif idade <= 25 and idade > 19: 
+    print("Classificação do atleta: SÊNIOR")
+elif idade <= 19 and idade > 14: 
+    print("Classificação do atleta: JUNIOR")
+elif idade <= 14 and idade > 9: 
+    print("Classificação do atleta: INFANTIL")
+elif idade <= 9:
+    print("Classificação do atleta: MIRIM")
 
 #OUTRA FORMA DE RESOLVER
 

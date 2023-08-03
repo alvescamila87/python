@@ -9,7 +9,7 @@ print('-'*80)
 jogador=int(input('Qual é o seu palpite? ')) #Jogador tenta informar o número a ser sorteado/pensado pelo PC
 tentativas = 0
 acertou = False
-while not acertou and jogador not in (0,10):
+while not acertou:
     jogador=int(input('Qual é o seu palpite? '))
     tentativas += 1
     if jogador == computador:

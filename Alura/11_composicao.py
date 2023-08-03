@@ -30,20 +30,20 @@ class Conta:
 
     def depositar(self, valor):
         self.saldo += valor
-        self.historico.transacoes.append("Depósito de R${}" .format(valor))
-        print("Depósito de R$%.2f realizado com sucesso! Saldo atualizado R$%.2f." %(valor, self.saldo))
+        self.historico.transacoes.append("Depósito de R${:.2f}" .format(valor))
+        print("Depósito de R${:.2f} realizado com sucesso! Saldo atualizado R${:.2f}." %(valor, self.saldo))
 
     def sacar(self, valor):
         if (self.saldo < valor):
             return False
         else:
             self.saldo -= valor
-            self.historico.transacoes.append("Saque de R${}" .format(valor))
-            print("Saque de R$%.2f realizado com sucesso! Saldo atualizado R$%.2f." %(valor, self.saldo))
+            self.historico.transacoes.append("Saque de R${:.2f}" .format(valor))
+            print("Saque de R$%.2f realizado com sucesso! Saldo atualizado R${:.2f}." %(valor, self.saldo))
     
     def extrato(self):
-        print("Conta: {} - Saldo atualizado: R${}, Limite: {}" .format(self.numero, self.saldo, self.limite))
-        self.historico.transacoes.append("Imprimindo extrato - Saldo de R$ {}" .format(self.saldo))
+        print("Conta: {} - Saldo atualizado: R${:.2f}, Limite: {:.2f}" .format(self.numero, self.saldo, self.limite))
+        self.historico.transacoes.append("Imprimindo extrato - Saldo de R$ {:.2f}" .format(self.saldo))
 
     def transferir_para(self, destino, valor):
         retirou = self.sacar(valor)
@@ -51,7 +51,7 @@ class Conta:
             return False
         else:
             destino.depositar(valor)
-            self.historico.transacoes.append("Transferência de R${} para a conta {}" .format(valor, destino.numero))
+            self.historico.transacoes.append("Transferência de R${:.2f} para a conta {}" .format(valor, destino.numero))
             return True
 
 

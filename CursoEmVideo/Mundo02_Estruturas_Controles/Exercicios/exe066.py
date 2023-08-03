@@ -1,6 +1,5 @@
 #estrutura de repetição: vários números com flag
 
-# num = 0
 soma = 0
 contador = 0
 
@@ -11,5 +10,5 @@ while True:
     contador += 1    
     soma += num
 
-print(f"A soma dos {contador} números foi de {soma}.")
+print(f"A soma dos {contador} números foi {soma}.")
 

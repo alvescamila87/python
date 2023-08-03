@@ -22,8 +22,21 @@ for n in numeros:
 
 # opção 2 de resolução:
 
-# tupla
-# num = (int(input("Digite o um número: ")), 
-#        int(input("Digite o outro número: ")), 
-#        int(input("Digite o mais um número: ")), 
-#        int(input("Digite o último número: ")), )
+# criar a tupla
+num = (int(input("Digite o um número: ")), 
+       int(input("Digite o outro número: ")), 
+       int(input("Digite o mais um número: ")), 
+       int(input("Digite o último número: ")))
+
+print(f"Você digitou os valores: {num}")
+
+print(f"O valor '9' apareceu {num.count(9)} vezes.")
+if 3 in num:
+    print(f"O valor '3' apareceu na {num.index(3)+1}ª posição.")
+else:
+    print("O valor '3' não foi digitado em nenhuma posição.")
+
+print(f"Os valores pares digitados foram: ", end="")
+for x in num:
+    if x % 2 == 0:
+        print(x, end=" ")

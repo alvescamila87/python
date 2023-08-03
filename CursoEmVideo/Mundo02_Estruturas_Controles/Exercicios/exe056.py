@@ -24,7 +24,7 @@ for pessoa in range(1,5):
         nome_homem = nome
 
     # Identificar a quantidade de mulheres com menos de 20 anos
-    if sexo == "Ff" and idade < 20:
+    if sexo in "Ff" and idade < 20:
         total_mulher_20 += 1
 
 print("A média da idade do grupo é de {:.1f} anos.".format(media))

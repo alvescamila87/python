@@ -1,27 +1,18 @@
-#estruturas compostas: Dividindo valores em válias listas
+#estruturas compostas: Validando expressões matemáticas
 
-lista_numeros = list()
-pares = list()
-impares = list()
-
-while True:
-    num = int(input("Digite um número: "))
-    lista_numeros.append(num)
-    continuar = " "
-    while continuar not in "SN":
-        continuar = str(input("Quer continuar? [S/N]")).strip().upper()[0]
-    if continuar == "N":
-        break
-
-print(f"A lista completa é: {lista_numeros}.")
-
-for par in lista_numeros:
-    if par % 2 == 0:
-       pares.append(par)
-print(f"A lista de PARES é: {pares}.")
-
-for impar in lista_numeros:
-    if impar % 2 != 0:
-        impares.append(impar)
-print(f"A lista de ÍMPARES é: {impares}.")
-
+expressao = str(input("Digite a expressão: "))
+pilha = []
+for simbolo in expressao:
+    # Verifica se a lista da pilha está cheia ou vazia
+    if simbolo == '(':
+        pilha.append("(")
+    elif simbolo == ')':
+        if len(pilha) > 0: # Verifica se a pilha NÃO está vazia
+            pilha.pop() # Remove o último elemento
+        else: # Se a pilha estiver vazia
+            pilha.append(')') # Sinal de que teve mais parênteses fechando que abrindo
+            break
+if len(pilha) == 0: # Cada parênteses que abriu, teve sua relação com parênteses fechando
+    print(f"Sua expressão está VÁLIDA: {expressao}")
+else: 
+    print(f"Sua expressão está I-N-VÁLIDA: {expressao}")

@@ -4,7 +4,7 @@ lado1 = float(input("Informe tamanho do 'LADO 1': "))
 lado2 = float(input("Informe tamanho do 'LADO 2': "))
 lado3 = float(input("Informe tamanho do 'LADO 3': "))
 if lado1 < lado2 + lado3 and lado2 < lado1 + lado3 and lado3 < lado1 + lado2:
-    print('Formou um triângulo!', end='')
+    print('Formou um triângulo!')
     if lado1 == lado2 == lado3:
         print("Triângulo EQUILÁTERO: todos os lados iguais: {}, {}, {},".format(lado1, lado2, lado3))
     elif lado1 != lado2 != lado3 != lado1:

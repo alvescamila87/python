@@ -28,7 +28,7 @@ for pessoa in range(1,5):
             menor_idade = idade
             nome_pessoa_menor = nome.upper()
 
-print("A média da idade do grupo é de {:.1f} anos.".format(media))
+print("A média da idade do grupo de pessoas é de {:.1f} anos.".format(media))
 print("A pessa mais velha tem {} anos e se chama {}.".format(maior_idade, nome_pessoa_maior))
 print("A pessa mais nova tem {} anos e se chama {}.".format(menor_idade, nome_pessoa_menor))
 
