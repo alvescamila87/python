@@ -1,34 +1,20 @@
-#Estruturas compostas: Dicionários {} - EXERCÍCIO: Jogo de dados em python
+#Estruturas compostas: Dicionários {} - EXERCÍCIO: Cadastro de trabalhador python
 
-from random import randint
-from time import sleep
-# from operator import itemgetter --> DEPRECATED
+from datetime import date
 
-# Para sortear as jogadas no dado
-jogos_dado = {
-              'jogador1': randint(1,6),
-              'jogador2': randint(1,6),
-              'jogador3': randint(1,6),
-              'jogador4': randint(1,6)
-              }
+trabalhador = dict()
 
-# Para colocar na ordem
-ranking = dict()
-
-print('Valores sorterados:')
-
-# Para mostrar o que cada jogador tirou no dado
-for k, v in jogos_dado.items():
-    print(f'{k} tirou {v} no dado.')
-    sleep(1)
-
-# Para colocar em ordem por parte de valor(1), caso contrário seria chave(0)
-# ranking = sorted(jogos_dado.items(), key=itemgetter(1), reverse=True) --> DEPRECATED
-ranking = sorted(jogos_dado.items(), key=lambda item: item[1], reverse=True)
+trabalhador["nome"] = str(input("Nome: "))
+trabalhador["ano de nascimento"] = int(input("Ano de nascimento: "))
+ano_atual = date.today().year
+trabalhador["idade"] = (ano_atual - trabalhador["ano de nascimento"])
+trabalhador["ctps"] = int(input("Informe o nº da Carteira de Trabalho (CTPS). [Informe '0' caso não tenha]: "))
+if trabalhador["ctps"] != 0:
+    trabalhador["ano de contratacao"] = int(input("Ano de contratação: "))
+    trabalhador["salario"] = float(input("Salário: R$"))
+    trabalhador["aposentadoria"] = trabalhador["idade"] + ((trabalhador["ano de contratacao"] + 35) - ano_atual)
 print("-="*30)
-print('  == RANKING DOS JOGADORES ==')
+for k, v in trabalhador.items():
+    print(f" - {k} tem valor {v}.")
 
-# Tratar resultado como lista
-for i, v in enumerate(ranking):
-    print(f' {i+1}º lugar: {v[0]} com {v[1]}.')
-    sleep(1)
+

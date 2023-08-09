@@ -146,6 +146,7 @@ for est in brasil:
     for k, v in est.items():
         print(f"{k} = {v}") 
 
+# segunda opção de formatação
 for est in brasil:
     for v in est.values():
         print(v, end=" ")
