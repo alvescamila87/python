@@ -29,8 +29,7 @@ print(f"A soma dos valores da terceira coluna é: {soma_coluna}")
 for c in range(0,3):
     if c == 0:
         maior_valor = matriz[1][c]
-    else:
-        if matriz[1][c] > maior_valor:
-            maior_valor = matriz[1][c]
+    elif matriz[1][c] > maior_valor:
+        maior_valor = matriz[1][c]
 print(f"O maior valor da segunda linha é: {maior_valor}")
 

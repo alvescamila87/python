@@ -1,5 +1,6 @@
 #estruturas compostas: Dividindo valores em válias listas
 
+# Opção 1 - Camila
 lista_numeros = list()
 pares = list()
 impares = list()
@@ -25,7 +26,7 @@ for impar in lista_numeros:
         impares.append(impar)
 print(f"A lista de ÍMPARES é: {impares}.")
 
-#Opção 2
+#Opção 2 - Guanabara
 
 numeros = list()
 lista_pares = list()

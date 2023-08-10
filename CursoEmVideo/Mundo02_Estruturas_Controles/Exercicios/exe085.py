@@ -1,6 +1,6 @@
 #Parte 2: Estruturas compostas -> Listas com pares e ímpares
 
-# Opção 1
+# Opção 1 - Camila
 
 numeros = [[], []]
 valor = 0
@@ -15,9 +15,14 @@ for c in range(1,8):
 print("-="*30)
 print(f"Os valores pares digitados foram: {sorted(numeros[0])}.")
 print(f"Os valores ímpares digitados foram: {sorted(numeros[1])}")
+# outra opção de print ordenado:
+# numeros[0.sorted()]
+# numeros[0.sorted()]
 
 
-# Opção 2
+
+
+# Opção 2 - Guanabara
 lista_numeros = list()
 pares = list()
 impares = list()

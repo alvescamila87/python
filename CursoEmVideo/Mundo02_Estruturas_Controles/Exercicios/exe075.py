@@ -1,5 +1,7 @@
 #estruturas compostas: Análise de dados em uma Tupla
 
+# Opção 1 de resolução - Camila
+
 num1 = int(input("Digite o 1º número: "))
 num2 = int(input("Digite o 2º número: "))
 num3 = int(input("Digite o 3º número: "))
@@ -20,7 +22,7 @@ for n in numeros:
         print(n, end=" ")
 
 
-# opção 2 de resolução:
+# Opção 2 de resolução - Guanabara
 
 # criar a tupla
 num = (int(input("Digite o um número: ")), 

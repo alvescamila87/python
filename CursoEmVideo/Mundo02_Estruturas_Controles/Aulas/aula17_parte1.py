@@ -1,5 +1,6 @@
 # Estruturas compostas: variáveis compostas: Foco em LISTAS[] - Parte 1
 # Listas são mutáveis
+# Tem Índices numéricos
 
 lanche = ["hambúrguer", "suco", "pizza", "pudim"]
 print(lanche)
@@ -46,7 +47,7 @@ print(numeros)
 numeros.sort()
 print(numeros)
 
-# Colocar a lista em ordem - IVNERSA
+# Colocar a lista em ordem - INVERSA
 num = [9,6,1,2,3,4,5]
 print(num)
 num.sort(reverse=True)

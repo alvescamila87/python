@@ -2,6 +2,7 @@
 # Listas são mutáveis
 # Listas dentro de listas
 # Estrutura = nome da lista
+# Tem Índices numéricos
 
 dados = list()
 dados.append("Pedro")

@@ -1,6 +1,6 @@
 #estrutura de repetição: simulador de caixa eletrônico
 
-# Opção 1 de resolução
+# Opção 1 de resolução - Camila
 print('='*40)
 print('{:^40}'.format(' BANCO CEV '))
 print('='*40)
@@ -39,7 +39,7 @@ print(f'''Saque solicitado: R${valor_saque:.2f}.
       {nota_1} notas de R$  1,00;
       ''')
 
-# Opção 2 de resolução
+# Opção 2 de resolução - Guanabara
 print('='*40)
 print('{:^40}'.format(' BANCO CEV '))
 print('='*40)

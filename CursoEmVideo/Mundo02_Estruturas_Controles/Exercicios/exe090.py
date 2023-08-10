@@ -1,5 +1,7 @@
 #Estruturas compostas: Dicionários {} - EXERCÍCIO: Dicionário Python
 
+# Opção 1 - Camila:
+
 aluno = dict()
 
 aluno["nome"] = str(input("Nome: "))
@@ -18,7 +20,7 @@ else:
 print(f" - situação é igual a {aluno['situação']}")
 
 
-# Opção 2:
+# Opção 2 - Guanabara
 
 aluno = dict()
 

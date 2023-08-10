@@ -2,7 +2,7 @@
 
 from random import randint
 from time import sleep
-# from operator import itemgetter --> DEPRECATED
+# from operator import itemgetter --> DEPRECATED (Usar lambda ao invés de item getter)
 
 # Para sortear as jogadas no dado
 jogos_dado = {
@@ -23,7 +23,7 @@ for k, v in jogos_dado.items():
     sleep(1)
 
 # Para colocar em ordem por parte de valor(1), caso contrário seria chave(0)
-# ranking = sorted(jogos_dado.items(), key=itemgetter(1), reverse=True) --> DEPRECATED
+# ranking = sorted(jogos_dado.items(), key=itemgetter(1), reverse=True) --> DEPRECATED (Usar lambda ao invés de item getter)
 ranking = sorted(jogos_dado.items(), key=lambda item: item[1], reverse=True)
 print("-="*30)
 print('  == RANKING DOS JOGADORES ==')
