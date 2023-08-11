@@ -12,15 +12,11 @@ def maiorValor(* numeros):
         print(f"{num} ", end="", flush=True)
         sleep(0.3)
     print(f"Foram informados {len(numeros)} números ao todo.")
-    # if len(numeros) == 0:
-    #     maior_numero = num
-    # else:
-    #     if num > maior_numero:
-    #         maior_numero = num
-    if len(numeros) > 0:
-        print(f'{max(numeros)}')
+    if len(numeros) == 0:
+        maior_numero = num
     else:
-        print("Não foi passado valor")
+        if num > maior_numero:
+            maior_numero = num
     print(f"O maior valor informado foi '{maior_numero}'.")
     sleep(0.5)
 
