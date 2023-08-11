@@ -1,6 +1,12 @@
 # Funções PARTE 2 - Exercício: Funções para votação
 
 def voto(ano):
+    """
+    -> Função que checa o ano de nascimento recebido versus a data atual e retorna se o voto é: opcional, obrigatório ou ainda não vota.
+    :param ano: recebe o ano de nascimento da pessoa votante
+    :return: retorna se voto é opcional, obrigatório ou não vota
+    Função criada no CursoEmVídeo (Guanabara)
+    """
     from datetime import date
     idade = date.today().year - nasc
     if idade < 16:
