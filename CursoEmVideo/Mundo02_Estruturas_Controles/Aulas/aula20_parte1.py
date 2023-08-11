@@ -1,6 +1,15 @@
 # Funções: DEFs Python
 # Rotina: atividade que faz constantemente
 
+# 0) Parâmetros reais e parâmetros formais
+
+# Parâmetros formais:
+def contador(i, f, p):
+    print(i, f, p)
+
+# Parâmetros reais:
+contador(2,10,2)
+
 # 1) Função SEM parâmetro
 def mostraLinha():
     print('-' * 40)
