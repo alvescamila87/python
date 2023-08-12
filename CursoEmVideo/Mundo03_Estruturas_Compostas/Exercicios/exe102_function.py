@@ -25,3 +25,16 @@ def fatorial(num, show=False):
 n = int(input("Informe um número que você deseja o fatorial: "))
 print(fatorial(n, True))
 help(fatorial)
+
+# Opção 2 (Criar fatorial)
+
+def fatorial(n):
+    f = 1
+    for c in range(1,n+1):
+        f *= c
+    return f
+
+
+num = int(input("Digite um valor: "))
+fat = fatorial(num)
+print(f"O fatorial de {num} é {fat}.")
