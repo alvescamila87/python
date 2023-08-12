@@ -2,9 +2,9 @@
 
 def voto(ano):
     """
-    -> Função que checa o ano de nascimento recebido versus a data atual e retorna se o voto é: opcional, obrigatório ou ainda não vota.
+    -> Checa o ano de nascimento recebido versus a data atual e retorna se o voto é: opcional, obrigatório ou ainda não vota.
     :param ano: recebe o ano de nascimento da pessoa votante
-    :return: retorna se voto é opcional, obrigatório ou não vota
+    :return: retorna valor literal, ou seja, se a idade possui voto: opcional, obrigatório ou não vota
     Função criada no CursoEmVídeo (Guanabara)
     """
     from datetime import date
