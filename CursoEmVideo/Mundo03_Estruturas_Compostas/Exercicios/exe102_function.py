@@ -6,6 +6,7 @@ def fatorial(num, show=False):
     :param num: O número a ser calculado.
     :param show: (opcional) Exibe ou não a fórmula do Fatorial! do número.
     :return: O valor do Fatorial de um número 'num'.
+    Função criada no CursoEmVídeo (Guanabara)
     """
     print('-'*20)
     f = 1
@@ -23,3 +24,4 @@ def fatorial(num, show=False):
 # Programa principal
 n = int(input("Informe um número que você deseja o fatorial: "))
 print(fatorial(n, True))
+help(fatorial)
