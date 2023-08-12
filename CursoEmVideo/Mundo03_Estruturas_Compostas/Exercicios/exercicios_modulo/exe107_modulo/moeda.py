@@ -9,12 +9,12 @@ def dobro(preco):
     return resultado
 
 
-def aumentar(preco, taxa=10):
+def aumentar(preco, taxa=0):
     resultado = preco + (preco * taxa/100)
     return resultado
 
 
-def diminuir(preco, taxa=10):
+def diminuir(preco, taxa=0):
     resultado = preco - (preco * taxa/100)
     return resultado
 
