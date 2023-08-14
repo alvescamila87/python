@@ -32,8 +32,8 @@ def aumentar(preco=0, taxa=0, formatacao=False):
     :return: retorna o calculo de preço com aumento, de acordo com a taxa, NÃO formatado (quando formatado = False) ou retorna o calculo de preço com aumento, de acordo com a taxa,formatado (quando formatado = True)
     Função criada no CursoEmVídeo (Guanabara)
     """
-    resultado = preco + (preco * taxa/100)
-    return resultado if formatacao is False else moeda(preco)
+    resultado = preco + (preco * taxa / 100)
+    return resultado if formatacao is False else moeda(resultado)
 
 
 def diminuir(preco=0, taxa=0, formatacao=False):
@@ -45,14 +45,14 @@ def diminuir(preco=0, taxa=0, formatacao=False):
     :return: retorna o calculo de preço reduzido, de acordo com a taxa, NÃO formatado (quando formatado = False) ou retorna o calculo de preço reduzido, de acordo com a taxa,formatado (quando formatado = True)
     Função criada no CursoEmVídeo (Guanabara)
     """
-    resultado = preco - (preco * taxa/100)
-    return resultado if formatacao is False else moeda(preco)
+    resultado = preco - (preco * taxa / 100)
+    return resultado if formatacao is False else moeda(resultado)
 
 
 def moeda(preco=0, moeda="R$"):
     """
     Função que inclui a formatação de moeda BRL e substitui a formatação de pontos (padrão EN) para vírgulas(padrão PT-BR)
-    :param preco: opcional, recebe o preço calculado/informado.
+    :param preco: opcional, recebe a informação de preço de 'p'
     :param moeda: opcional, recebe a formatação da moeda BRL
     :return: retorna as formatações de: moeda para BRL e substituição de pontos (padrão EN) para vírgulas(padrão PT-BR), com duas casas decimais após a vírgula.
     """

@@ -1,4 +1,4 @@
-# Módulos e Pacotes - Exercício: Formatando moedas em python
+# Módulos e Pacotes - Exercício: Exercitando módulos em python
 
 import moeda
 
