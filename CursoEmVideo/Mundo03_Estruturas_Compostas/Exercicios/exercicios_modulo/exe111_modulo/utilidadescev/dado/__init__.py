@@ -1,14 +1,9 @@
 def leia_dinheiro(msg):
-    ok = False
-    valor = 0
-    while True:
-        p = str(input(msg))
-        if p.isnumeric():
-            valor = float(p)
-            valor = valor.replace(".", ",")
-            ok = True
+    valido = False
+    while not valido:
+        entrada = str(input(msg)).replace(",", ".").strip()
+        if entrada.isalpha() or entrada == "":
+            print(f"\033[0;31mERRO! '{entrada}' é um preço inválido!\033[m")
         else:
-            print(f"\033[0;31mERRO! '{p}' é um preço inválido!\033[m")
-        if ok:
-            break
-    return valor
+            valido = True
+            return float(entrada)
