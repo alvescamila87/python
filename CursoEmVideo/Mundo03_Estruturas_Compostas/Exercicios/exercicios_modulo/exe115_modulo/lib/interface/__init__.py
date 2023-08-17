@@ -31,3 +31,4 @@ def leia_int(opcao):
             return 0
         else:
             return entrada_inteiro
+
