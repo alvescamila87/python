@@ -1,0 +1,55 @@
+<testsuite name="calc.Soma" tests="2" errors="2" failures="0" skipped="0" time="0.001995" timestamp="2023-08-18T20:16:34.798124" hostname="DELL7567"><testcase classname="calc.Soma" name="adicao basica" status="failed" time="0.001995"><error type="TypeError" message="unsupported operand type(s) for +: 'float' and 'str'">
+<![CDATA[
+Failing step: Quando somar "2" com "2" ... failed in 0.002s
+Location: features/calc.feature:9
+Traceback (most recent call last):
+  File "C:\Users\Camila\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\Camila\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\steps.py", line 7, in test_soma
+    context.result = float(soma(float(valor_0), (valor_1)))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Camila\OneDrive\GitHub\python\Dunossauro\Live001_TestesPython\BDD\features\steps\calc.py", line 2, in soma
+    return x + y
+           ~~^~~
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Cenario: adicao basica
+    Quando somar "2" com "2" ... failed in 0.002s
+    Então o resultado deve ser "4" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="calc.Soma" name="adicao do ponto flutuante" status="failed" time="0.0"><error type="TypeError" message="unsupported operand type(s) for +: 'float' and 'str'">
+<![CDATA[
+Failing step: Quando somar "2.0" com "2.0" ... failed in 0.000s
+Location: features/calc.feature:13
+Traceback (most recent call last):
+  File "C:\Users\Camila\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\Camila\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\steps.py", line 7, in test_soma
+    context.result = float(soma(float(valor_0), (valor_1)))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Camila\OneDrive\GitHub\python\Dunossauro\Live001_TestesPython\BDD\features\steps\calc.py", line 2, in soma
+    return x + y
+           ~~^~~
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Cenario: adicao do ponto flutuante
+    Quando somar "2.0" com "2.0" ... failed in 0.000s
+    Então o resultado deve ser "4.0" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
