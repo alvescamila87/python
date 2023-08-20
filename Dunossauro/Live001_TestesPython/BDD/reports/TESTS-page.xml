@@ -1,0 +1,27 @@
+<testsuite name="page.index" tests="1" errors="1" failures="0" skipped="0" time="0.001034" timestamp="2023-08-19T23:17:07.185777" hostname="DELL7567"><testcase classname="page.index" name="Texto da pagina de index" status="failed" time="0.001034"><error type="AttributeError" message="'Context' object has no attribute 'driver'">
+<![CDATA[
+Failing step: Quando acessar a pagina "http://127.0.0.1:8080/" ... failed in 0.001s
+Location: features/page.feature:9
+Traceback (most recent call last):
+  File "C:\Users\Camila\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\Camila\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\page.py", line 8, in test_access_page
+    context.driver.get('http://127.0.0.1:8080/')
+    ^^^^^^^^^^^^^^
+  File "C:\Users\Camila\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\runner.py", line 321, in __getattr__
+    raise AttributeError(msg)
+AttributeError: 'Context' object has no attribute 'driver'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Cenario: Texto da pagina de index
+    Quando acessar a pagina "http://127.0.0.1:8080/" ... failed in 0.001s
+    Entao deve ser exibido na pagina a string "Hello guys!" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
