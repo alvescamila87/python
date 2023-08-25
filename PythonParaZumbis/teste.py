@@ -1,26 +1,24 @@
-# Leitura e gravação de arquivos:
+class Cliente:
+    def __int__(self, nome, telefone):
+        self.nome = nome
+        self.telefone = telefone
 
-# Função para checar a validade do IP:
+class Conta:
 
-def ip_ok(ip):
-    ip = ip.split('.')
-    for byte in ip:
-        if int(byte) > 255:
-            return False
-    return True
+    def __int__(self, clientes, numero, saldo=0):
+        self.saldo = saldo
+        self.numero = numero
+        self.clientes = clientes
+    def resumo(self):
+        print('CC Número: %s Saldo: %10.2f' % (self.numero, self.saldo))
+    def saque(self, valor):
+        if self.saldo >= valor:
+            self.saldo -= valor
+    def deposito(self, valor):
+        self.saldo += valor
 
 
-arq = open('c:/Users/Camila/Downloads/IPS.txt')
-validos = open('c:/Users/Camila/Downloads/IPS_validos.txt', 'w')
-invalidos = open('c:/Users/Camila/Downloads/IPS_invalidos.txt', 'w')
-
-for linha in arq.readlines():
-    if ip_ok(linha):
-        validos.write(linha)
-    else:
-        invalidos.write(linha)
-
-arq.close()
-validos.close()
-invalidos.close()
-
+camila = Cliente()
+camila.nome = "Camila"
+camila.telefone = '79651-56161'
+print(camila.nome, camila.telefone)
