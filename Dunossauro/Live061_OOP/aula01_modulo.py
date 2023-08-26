@@ -1,4 +1,4 @@
-from aula01_intro_oop import Fila
+from Dunossauro.Live061_OOP.aula01_intro_oop import Fila
 
 # Abstração de dado:
 supermercado = Fila()
