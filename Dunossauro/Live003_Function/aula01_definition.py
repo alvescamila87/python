@@ -1,4 +1,4 @@
-# Função 1: Definições de funções
+# Funções #1 - Definindo funções
 
 # 1-Função nomeada
 def minha_funcao():
