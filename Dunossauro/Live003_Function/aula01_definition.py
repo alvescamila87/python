@@ -9,11 +9,11 @@ print(minha_funcao())
 # 2-Função anônima
 
 #Opção 1:
-anonima = lambda: 'oi - opção1 '
+anonima = lambda: 'oi lambda - opção1 '
 print(anonima())
 
 #Opção 2:
-print(lambda: 'teste opção 2')
+print(lambda: 'teste lambda - opção 2')
 
 # 3-Função classe
 
