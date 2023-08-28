@@ -1,4 +1,4 @@
-# Funções #8 - Módulo operator
+# Funções #8 - HOFs e Módulo operator
 
 """Operator."""
 from operator import add, mul, sub, floordiv, itemgetter

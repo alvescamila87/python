@@ -1,0 +1,3 @@
+Teste de escrita de arquivo: Open WRITE!
+Continuando escrita no arquivo... WRITE
+Continuando de onde parou... WRITELINE
