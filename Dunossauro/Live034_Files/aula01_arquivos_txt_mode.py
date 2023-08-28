@@ -1,4 +1,4 @@
-# Live #34 - Trabalhando com arquivos de texto
+# Live #34 - Trabalhando com arquivos de texto - MODE
 
 # modo write pode ser implícito ou exemplícito
 
@@ -27,3 +27,9 @@ from string import ascii_letters
 file = open('arquivo_teste_letras.txt', 'a')
 for letra in ascii_letters:
     file.write(f"\n{letra}")
+
+# modo + (permite mesclar modos, usando o +, como: 'a+' e file.write)
+
+file = open('arquivo_teste1.txt', 'a+')
+file.write('\nOlá mundo python!')
+print(file.read())
