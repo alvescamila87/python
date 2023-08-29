@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Dunossauro/Live016_Files/aula01_file.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dunossauro/Live016_Files/aula02_file.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dunossauro/Live016_Files/aula03_file.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Dunossauro/Live034_Files/aula05_arquivos_txt_newline.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Dunossauro/Live034_Files/aula06_arquivos_txt_closefd.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Dunossauro/Live034_Files/aula07_arquivos_txt_opener.py" charset="UTF-8" />
