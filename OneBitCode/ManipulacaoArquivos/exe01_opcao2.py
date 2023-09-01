@@ -4,4 +4,4 @@ def file_read_from_line(file_name, n_lines):
         for line in islice(file, n_lines):
             print(line.rstrip())
 
-file_read_from_line("ArquivosAulas/exe01_cities.txt", 2)
+file_read_from_line("ArquivosAulas/exe01_cities.txt", 200)

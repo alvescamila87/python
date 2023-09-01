@@ -15,7 +15,7 @@ print(f"O arquivo '{diretorio}' possui {qtd_linhas} linhas.")
 
 
 with open(diretorio, 'r') as file:
-    data = file.readlines()[4]
-    print(f"A 4ª linha tem a cidade: {data}")
+    data = file.readlines()[200]
+    print(f"A escolhida linha tem a cidade de: {data}")
 
 
