@@ -1,6 +1,6 @@
 carros = []
 
-with open("ArquivosAulas/aula10_cars2.csv", "r", encoding="windows 1252") as file:
+with open("ArquivosAulas/aula10_cars.csv", "r", encoding="windows 1252") as file:
     for line in file:
         marca, modelo = line.rstrip().split(",")
         veiculos = dict()

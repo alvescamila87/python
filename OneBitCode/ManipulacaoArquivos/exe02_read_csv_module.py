@@ -2,7 +2,7 @@ import csv
 
 carros = []
 
-with open("ArquivosAulas/aula10_cars2.csv", "r", encoding="windows 1252") as file:
+with open("ArquivosAulas/aula10_cars.csv", "r", encoding="windows 1252") as file:
     reader = csv.DictReader(file)
     for row in reader:
         carros.append(dict(marca=row["marca"], modelo=row["modelo"]))
