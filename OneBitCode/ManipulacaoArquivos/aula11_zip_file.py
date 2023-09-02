@@ -27,6 +27,6 @@ with zipfile.ZipFile('arquivos_csv.zip', 'w') as file_zip:
         file_zip.write(file)
 
 # 6) Compactar todos os arquivos
-with zipfile.ZipFile('arquivos_zip.zip', 'w') as file_zip:
-    for file in glob.glob("ArquivosAulas/*zip"):
+with zipfile.ZipFile('arquivos_gerais.zip', 'w') as file_zip:
+    for file in glob.glob("ArquivosAulas/*"):
         file_zip.write(file)
