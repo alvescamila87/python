@@ -9,13 +9,4 @@ class Fila:
     def sair(self):
         self.fila.pop(0)
 
-supermercado = Fila()
-
-supermercado.entrar("Camila")
-supermercado.entrar("Karoline")
-supermercado.entrar("Isabel")
-print(supermercado.fila)
-supermercado.sair()
-supermercado.sair()
-supermercado.sair()
-print(supermercado.fila)
+# Verificar arquivo: 'modulo.aula01.py'
