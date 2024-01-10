@@ -1,4 +1,5 @@
 import pandas as pd
+import win32com.client as win32
 
 # importar base de dados
 tabela_vendas = pd.read_excel('vendas.xlsx')
@@ -23,3 +24,9 @@ ticket_medio = (faturamento['Valor Final'] / quantidade_produtos['Quantidade']).
 print(ticket_medio)
 
 # enviar um email com o relatório
+outlook = win32.Dispatch('outlook.application')
+mail = outlook.CreateItem(0)
+mail.To = 'email@gmail.com'
+mail.Subject = 'subject'
+mail.HTMLBody = 'f'
+mail.Send()
