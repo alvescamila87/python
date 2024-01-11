@@ -21,6 +21,7 @@ print(quantidade_produtos)
 print('-' * 50)
 # ticket medio por produto em cada loja
 ticket_medio = (faturamento['Valor Final'] / quantidade_produtos['Quantidade']).to_frame()
+ticket_medio = ticket_medio.rename(columns={0: 'Ticket médio'})
 print(ticket_medio)
 
 # enviar um email com o relatório (código do stackoverflow)
@@ -28,26 +29,27 @@ outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
 mail.To = 'alvescamilatest@gmail.com'
 mail.Subject = 'Relatório de Vendas por Loja'
-mail.HTMLBody = '''
-Prezados,
+mail.HTMLBody = f'''
+<p>Prezados,</p>
 
-segue o Relatório de Vendas por Loja.
+<p>segue o Relatório de Vendas por Loja.</p>
 
-Faturamento:
-{}
+<h3>Faturamento:</h3>
+{faturamento.to_html(formatters={'Valor Final': 'R${:,.2f}'.format})}
 
-Quantidade vendida:
-{}
+<h3>Quantidade vendida:</h3>
+{quantidade_produtos.to_html()}
 
-Ticket médio dos produtos em cada loja:
-{}
+<h3>Ticket médio dos produtos em cada loja:</h3>
+{ticket_medio.to_html()}
 
-Qualquer dúvida, estou à disposição.
+<p>Qualquer dúvida, estou à disposição.</p>
 
-Att.,
-Camila
+<p>Att.,</p>
+<p>Camila</p>
 
 '''
+
 mail.Send()
 
 print('E-mail enviado!')
